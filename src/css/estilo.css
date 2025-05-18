@@ -100,7 +100,8 @@ cursor: pointer;
 .home{
 	display: flex;
 	min-height: calc(100vh - 125px);
-	align-items: center;
+	flex-direction: row;
+	align-items: stretch;
 	gap: 30px;
 	
 
@@ -108,11 +109,11 @@ cursor: pointer;
 .home .informacoes-primeira-sessao{
 	display: flex;
 	flex-direction:column;
-	justify-content: flex-start;
-	gap: 10px;
+	justify-content: center;
+	gap: 15px;
 	letter-spacing: 2px;
-	padding: 0 15px;
-	max-width: 50%;
+	padding: 0 25px;
+	max-width: 60%;
 }
 .home .informacoes-primeira-sessao .descricao-sessao-conteudo{
 	font-family: var(--fonte-padrao);
