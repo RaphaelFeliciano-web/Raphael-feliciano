@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+:root{
+	--cor-de-fundo:black;
+	--cor-da-fonte:#fff;
+	--fonte-padrao:"Krona One", serif;
+	--margem-top-padrao: 25px;
+
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	background-color: var(--cor-de-fundo);
+	color: var(--cor-da-fonte);
+}
+
+.dados-perfil .conteudo-imagem{
+	background-image: url("../imagens/raphael-perfil.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 25%;
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	border:14px solid rgb(9, 140, 169);
+}
+.dados-perfil {
+	/* margin-top: var(--margem-top-padrao); */
+	font-family: var(--fonte-padrao);
+	background-color: #120a54;
+	color: rgb(186, 173, 199);
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+	width: 250px;
+	padding: 8px;
+}
+.dados-perfil .redes-sociais {
+	list-style: none;
+	padding: 5px;
+	display: flex;	
+	align-items: center;
+}
+
+.dados-perfil .redes-sociais a i {
+
+	border: 1px solid #073695;
+	border-radius: 50%;
+	padding: 5px;
+	text-align:center;
+	font-size: 25px;
+	transition: 0.3s;
+}
+.dados-perfil .redes-sociais a i:hover {
+	color: #0826aa;
+	border: 1px solid #fbfbfb;
+	transform: scale(1.5);
+}
+.menu{
+	display: flex;
+	flex-direction: row;
+justify-content: center;
+	background-color: rgb(22, 178, 178);
+	padding: 10px;
+	border: 2px solid red;
+
+}
+.menu ul{
+
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	gap: 10px;
+	}
+.menu-lista{
+
+	border: 1px solid #e71f1f;
+	text-align: center;
+	border-radius: 5px;
+	background-color: lightblue;
+	/* transition: background-color 0.3s aese; */
+}
+.menu-lista a{
+	
+	text-decoration: none;
+	color: #333;
+	padding: 10px 20px;
+	display: block;
+}
+
+.menu-lista :hover{
+background-color: rgb(73, 161, 238);
+cursor: pointer;
+}
+
+.home{
+	display: flex;
+	min-height: calc(100vh - 125px);
+	align-items: center;
+	gap: 30px;
+	
+
+}
+.home .informacoes-primeira-sessao{
+	display: flex;
+	flex-direction:column;
+	justify-content: flex-start;
+	gap: 10px;
+	letter-spacing: 2px;
+	padding: 0 15px;
+	max-width: 50%;
+}
+.home .informacoes-primeira-sessao .descricao-sessao-conteudo{
+	font-family: var(--fonte-padrao);
+	font-size:20px ;
+}
+
+
+.container-habilidades .habilidade i{
+	font-size: 3rem;	
+	padding: 20px 20px;
+  }
+  
+  .container-habilidades .habilidade h3{
+	display: flex;
+	color: #4662bf;
+	gap: 20px;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 20px;
+	justify-content: center;
+  }
+
+.habilidades .titulo {
+	text-align: center;
+	padding: 60px 0;
+	font-size: 45px;
+	font-weight: 500;
+	text-transform: uppercase;
+} 
+.habilidades .container-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.habilidades .container-habilidades .habilidade{
+    max-width: 350px;
+    padding: 40px 20px;
+}
