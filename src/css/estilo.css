@@ -117,6 +117,7 @@ cursor: pointer;
 }
 .home .informacoes-primeira-sessao .descricao-sessao-conteudo{
 	font-family: var(--fonte-padrao);
+	background-color:  red;
 	font-size:20px ;
 }
 
