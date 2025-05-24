@@ -57,6 +57,36 @@ body{
 	border: 1px solid #fbfbfb;
 	transform: scale(1.5);
 }
+  /* Estilos para o contêiner principal dos ícones */
+        .icones-redes-sociais {
+           display: flex;
+            max-width: 100%;
+            overflow-y: auto;       
+            white-space: nowrap; 
+            padding-bottom: 10px; /* Adiciona um pequeno padding na parte inferior para a barra de rolagem não ficar "colada" */
+        }
+
+        /* Estilos para cada item de rede social */
+        .redes-sociais {
+            display: inline-block; /* Faz com que os divs fiquem um ao lado do outro */
+            margin-right: 15px; /* Espaçamento entre os ícones */
+            font-size: 40px; /* Tamanho dos ícones, ajuste conforme necessário */
+            color: #333; /* Cor dos ícones */
+        }
+
+        /* Opcional: Para esconder a barra de rolagem em navegadores Webkit (Chrome, Safari) */
+        .icones-redes-sociais::-webkit-scrollbar {
+            height: 8px; /* Altura da barra de rolagem */
+        }
+
+        .icones-redes-sociais::-webkit-scrollbar-thumb {
+            background-color: #888; /* Cor do "polegar" da barra de rolagem */
+            border-radius: 4px; /* Borda arredondada do "polegar" */
+        }
+
+        .icones-redes-sociais::-webkit-scrollbar-track {
+            background-color: #f1f1f1; /* Cor do trilho da barra de rolagem */
+        }
 .menu{
 	display: flex;
 	flex-direction: row;
