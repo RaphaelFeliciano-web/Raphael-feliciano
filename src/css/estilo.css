@@ -71,7 +71,7 @@ body{
             display: inline-block; /* Faz com que os divs fiquem um ao lado do outro */
             margin-right: 15px; /* Espaçamento entre os ícones */
             font-size: 40px; /* Tamanho dos ícones, ajuste conforme necessário */
-            color: #333; /* Cor dos ícones */
+            color: #e5d8d8; /* Cor dos ícones */
         }
 
         /* Opcional: Para esconder a barra de rolagem em navegadores Webkit (Chrome, Safari) */
