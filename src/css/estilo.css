@@ -80,7 +80,7 @@ body{
         }
 
         .icones-redes-sociais::-webkit-scrollbar-thumb {
-            background-color: #888; /* Cor do "polegar" da barra de rolagem */
+            background-color: #eeeeee; /* Cor do "polegar" da barra de rolagem */
             border-radius: 4px; /* Borda arredondada do "polegar" */
         }
 
