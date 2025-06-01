@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
-:root{
-	--cor-de-fundo:black;
-	--cor-da-fonte:#fff;
-	--fonte-padrao:"Krona One", serif;
+:root {
+	--cor-de-fundo: #2618a1;
+	--cor-da-fonte: #efefef;
+	--fonte-padrao: "Krona One", serif;
 	--margem-top-padrao: 25px;
 
 }
 
-body{
+body {
 	display: flex;
 	flex-direction: column;
 	background-color: var(--cor-de-fundo);
 	color: var(--cor-da-fonte);
 }
 
-.dados-perfil .conteudo-imagem{
+.dados-perfil .conteudo-imagem {
 	background-image: url("../imagens/raphael-perfil.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -23,23 +23,25 @@ body{
 	border-radius: 50%;
 	height: 150px;
 	width: 150px;
-	border:14px solid rgb(9, 140, 169);
+	border: 14px solid rgb(15, 28, 77);
 }
+
 .dados-perfil {
 	/* margin-top: var(--margem-top-padrao); */
 	font-family: var(--fonte-padrao);
-	background-color: #120a54;
+	background-color: #2618a1;
 	color: rgb(186, 173, 199);
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
 	align-items: center;
 	width: 250px;
 	padding: 8px;
 }
+
 .dados-perfil .redes-sociais {
 	list-style: none;
 	padding: 5px;
-	display: flex;	
+	display: flex;
 	align-items: center;
 }
 
@@ -48,116 +50,136 @@ body{
 	border: 1px solid #073695;
 	border-radius: 50%;
 	padding: 5px;
-	text-align:center;
+	text-align: center;
 	font-size: 25px;
 	transition: 0.3s;
 }
+
 .dados-perfil .redes-sociais a i:hover {
 	color: #0826aa;
 	border: 1px solid #fbfbfb;
 	transform: scale(1.5);
 }
-  /* Estilos para o contêiner principal dos ícones */
-        .icones-redes-sociais {
-           display: flex;
-            max-width: 100%;
-            overflow-y: auto;       
-            white-space: nowrap; 
-            padding-bottom: 10px; /* Adiciona um pequeno padding na parte inferior para a barra de rolagem não ficar "colada" */
-        }
 
-        /* Estilos para cada item de rede social */
-        .redes-sociais {
-            display: inline-block; /* Faz com que os divs fiquem um ao lado do outro */
-            margin-right: 15px; /* Espaçamento entre os ícones */
-            font-size: 40px; /* Tamanho dos ícones, ajuste conforme necessário */
-            color: #e5d8d8; /* Cor dos ícones */
-        }
+/* Estilos para o contêiner principal dos ícones */
+.icones-redes-sociais {
+	display: flex;
+	max-width: 100%;
+	overflow-y: auto;
+	white-space: nowrap;
+	padding: 1px;
+	/* Adiciona um pequeno padding na parte inferior para a barra de rolagem não ficar "colada" */
+}
 
-        /* Opcional: Para esconder a barra de rolagem em navegadores Webkit (Chrome, Safari) */
-        .icones-redes-sociais::-webkit-scrollbar {
-            height: 8px; /* Altura da barra de rolagem */
-        }
+.icones-redes-sociais .redes-sociais-lateral:hover {
+	padding: 0px;
+	color: #9297ad;
+	border: 2px solid #fbfbfb;
+	transform: scale(1.5);
+}
 
-        .icones-redes-sociais::-webkit-scrollbar-thumb {
-            background-color: #eeeeee; /* Cor do "polegar" da barra de rolagem */
-            border-radius: 4px; /* Borda arredondada do "polegar" */
-        }
+/* Estilos para cada item de rede social */
+.redes-sociais-lateral {
+	display: inline-block;
+	margin: 25px;
+	font-size: 25px;
+	color: #867ab5;
+}
 
-        .icones-redes-sociais::-webkit-scrollbar-track {
-            background-color: #f1f1f1; /* Cor do trilho da barra de rolagem */
-        }
-.menu{
+.icones-redes-sociais-lateral::-webkit-scrollbar {
+	height: 100px;
+}
+
+.icones-redes-sociais-lateral::-webkit-scrollbar-thumb {
+	background-color: #eeeeee;
+	
+	border-radius: 4px;
+
+}
+
+.icones-redes-sociais-lateral::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+
+}
+
+.menu {
+	color: #ffffff;
 	display: flex;
 	flex-direction: row;
-justify-content: center;
+	justify-content: center;
 	background-color: rgb(22, 178, 178);
-	padding: 10px;
+	padding: 25px;
 	border: 2px solid red;
 
 }
-.menu ul{
 
+.menu ul {
 	padding: 0;
 	margin: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	gap: 10px;
-	}
-.menu-lista{
+	gap: 15px;
+}
 
-	border: 1px solid #e71f1f;
+.menu-lista {
+	border: 2px solid #e2e2e2;
 	text-align: center;
-	border-radius: 5px;
-	background-color: lightblue;
+	border-radius: 15px;
+	background-color: rgb(3, 5, 6);
 	/* transition: background-color 0.3s aese; */
 }
-.menu-lista a{
-	
+
+.menu-lista a {
+
 	text-decoration: none;
-	color: #333;
+	color: #fdf9f9;
 	padding: 10px 20px;
 	display: block;
 }
 
-.menu-lista :hover{
-background-color: rgb(73, 161, 238);
-cursor: pointer;
+.menu-lista :hover {
+	color: #e71f1f;
+	border-radius: 50px;
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
 }
 
-.home{
+.home {
 	display: flex;
 	min-height: calc(100vh - 125px);
 	flex-direction: row;
 	align-items: stretch;
 	gap: 30px;
-	
+
 
 }
-.home .informacoes-primeira-sessao{
+
+.home .informacoes-primeira-sessao {
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 	justify-content: center;
 	gap: 15px;
 	/* letter-spacing: 2px; */
 	padding: 15px 25px;
 	max-width: 60%;
 }
-.home .informacoes-primeira-sessao .descricao-sessao-conteudo{
+
+.home .informacoes-primeira-sessao .descricao-sessao-conteudo {
 	font-family: var(--fonte-padrao);
-	background-color:  red;
+	padding: 20px;
+	background-color: red;
 
 }
 
 
-.container-habilidades .habilidade i{
-	font-size: 3rem;	
+.container-habilidades .habilidade i {
+	font-size: 3rem;
 	padding: 20px 20px;
-  }
-  
-  .container-habilidades .habilidade h3{
+}
+
+.container-habilidades .habilidade h3 {
 	display: flex;
 	color: #4662bf;
 	gap: 20px;
@@ -165,7 +187,7 @@ cursor: pointer;
 	align-items: center;
 	margin-bottom: 20px;
 	justify-content: center;
-  }
+}
 
 .habilidades .titulo {
 	text-align: center;
@@ -173,15 +195,16 @@ cursor: pointer;
 	font-size: 45px;
 	font-weight: 500;
 	text-transform: uppercase;
-} 
-.habilidades .container-habilidades{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
 }
 
-.habilidades .container-habilidades .habilidade{
-    max-width: 350px;
-    padding: 40px 20px;
+.habilidades .container-habilidades {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+}
+
+.habilidades .container-habilidades .habilidade {
+	max-width: 350px;
+	padding: 40px 20px;
 }
