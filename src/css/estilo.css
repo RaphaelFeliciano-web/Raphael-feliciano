@@ -67,12 +67,12 @@ body {
 	max-width: 100%;
 	overflow-y: auto;
 	white-space: nowrap;
-	padding: 1px;
+	padding: 10px;
 	/* Adiciona um pequeno padding na parte inferior para a barra de rolagem não ficar "colada" */
 }
 
 .icones-redes-sociais .redes-sociais-lateral:hover {
-	padding: 0px;
+	
 	color: #9297ad;
 	border: 2px solid #fbfbfb;
 	transform: scale(1.5);
@@ -169,7 +169,7 @@ body {
 .home .informacoes-primeira-sessao .descricao-sessao-conteudo {
 	font-family: var(--fonte-padrao);
 	padding: 20px;
-	background-color: red;
+	
 
 }
 
@@ -208,3 +208,96 @@ body {
 	max-width: 350px;
 	padding: 40px 20px;
 }
+.projetos{
+	padding:70px 0 10px;
+
+}
+
+.projetos .titulo{
+	text-align: center;
+	padding: 60px 0;
+	font-size: 45px;
+	font-weight: 700;
+}
+.projetos .container-projetos{
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	justify-content: center;
+}
+
+/* .projetos .projetos{
+	max-width: 150px;
+	max-height: 150px;
+	display: none;
+} */
+.projetos .projeto.ativo{
+	position: relative;
+	display: block;
+}
+
+.projetos .projeto img{
+	height: 100%;
+}
+
+.projetos .projeto h3{
+	background-color: #4662bf;
+	width: 100%;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	position: absolute;
+	bottom: 0;
+}
+.projetos .projeto .informacoes-projeto{
+	background-color: rgb(36, 47, 208);
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	font-weight: 600;
+	opacity: 0;
+	transition: 0.3s;
+	padding: 20px;
+}
+.projetos .container-projetos .projeto:hover .informacoes-projeto{
+opacity: 0.7;
+background-color: #000;
+}
+.projetos .btn-mostrar-projetos{
+	background: none;
+	border: 1px solid#fff;
+	border-radius: 15px;
+	color: #fff;
+	width: 180px;
+	padding: 20px;
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.projetos .btn-mostrar-projetos:hover{
+	background-color: #1c2491;
+	transition: 0.3s;
+}
+
+.projetos .btn-mostrar-projetos.remover{
+	display: none;
+}
+@keyframes gradient-animation {
+	0% {
+	  background-position: 0% 50%;
+	}
+  
+	50% {
+	  background-position: 100% 50%;
+	}
+  
+	100% {
+	  background-position: 0% 50%;
+	}
+  }
